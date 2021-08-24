@@ -1,5 +1,26 @@
-# Linear-Regression
-IN this we have performed linear regression over a bike sharing data to estimate the demand varying with different features.
-In this project we have performed regression Analysis on the data provided from a Bike sharing company where the objectice is to identify the important feature for demand forecasting in future reference
-performed EDA firstly arranged data as per the categories, performed visualization using seaborn and matplotlib libraries to identify any patterns.
-Performed OLS method and concluded results using R2 score note: this can be done quite simpler of not using any trail and error method rather using RFE but we are in learning stage we went in doing every thing from basic.
+# Data Science Demand Prediction: Project Overview
+---
+* Model the demand for shared bikes with the available independednt variables
+* model Evaluation using R-squared score on the test set
+```python
+from sklearn.metrics import r2_score
+r2_score(y_test,y_pred)
+```
+* Built multi linear regression model for the prediction of demand
+
+## Code and Resources Used
+---
+**Python Version:** 3.7 <br>
+**Packages:** pandas, numpy, sklearn, statsmodel, matplotlib, seaborn
+
+## Data Preparation and Cleaning
+---
+* `season` column has 1,2,3,4 representing **spring, summer, fall, winter** which is continous and hence changed to categorical as to avoid class imbalance
+* Data has a lot of columns which needs to be categorical but represented as continous hence performing data manipulation to convert them to categorical variables
+
+## EDA
+---
+I Looked at the distribution of data with subplots and heatmaps to find the max correlation between features
+
+
+
